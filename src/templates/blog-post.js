@@ -35,6 +35,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             }}
           >
             {post.frontmatter.date}
+			{" "}
+			<span> . </span> {post.timeToRead} min read
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -96,6 +98,7 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
+	  timeToRead
     }
   }
 `

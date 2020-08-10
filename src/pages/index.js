@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from "../components/tags"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
@@ -16,6 +17,7 @@ const BlogIndex = ({ data, location }) => {
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+		const { timeToRead } = node
         return (
           <article key={node.fields.slug}>
             <header>
@@ -29,6 +31,9 @@ const BlogIndex = ({ data, location }) => {
                 </Link>
               </h3>
               <small>{node.frontmatter.date}</small>
+			  <small>&bull; {timeToRead} min.</small>
+			  {node.frontmatter.tags && node.frontmatter.tags.length > 0 ? ` - ` : ``}
+			  <Tags>{node.frontmatter.tags}</Tags>
             </header>
             <section>
               <p
@@ -56,6 +61,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
+		  timeToRead
           excerpt
           fields {
             slug
@@ -64,6 +70,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+			tags
           }
         }
       }
