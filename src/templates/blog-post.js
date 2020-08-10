@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Disqus from 'disqus-react'
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -10,6 +11,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
+  
+  const disqusConfig = {
+      url: `https://debamitra.github.io/debs-blog{location.pathname}`,
+      identifier: `${location.pathname}`,
+      title: post.frontmatter.title,
+    }
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -49,6 +56,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <Bio />
         </footer>
       </article>
+	  <Disqus.DiscussionEmbed shortname="debs-blog" config={disqusConfig} />
 
       <nav>
         <ul

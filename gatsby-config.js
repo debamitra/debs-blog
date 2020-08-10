@@ -7,7 +7,7 @@ module.exports = {
       summary: `(Hyderabad,India) who likes to build useful things.`,
     },
     description: `A personal space on the internet to share learnings and works`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    siteUrl: `https://debamitra.github.io/debs-blog`,
     social: {
       twitter: `debamitra_`,
     },
