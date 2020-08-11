@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 const Tags = ({ children }) =>
   children && (
     <ul style={{ marginBottom: 0, marginLeft: 0, display: "inline-flex" }}>
-      {children.split(", ").map(t => (
+      {children.map(t => (
         <li
           key={t}
           style={{

@@ -42,7 +42,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          &#8592; Back to Home
         </Link>
       </h3>
     )

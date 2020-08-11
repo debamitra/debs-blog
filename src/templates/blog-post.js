@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
+import Tags from "../components/tags"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -44,6 +45,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date}
 			{" "}
 			<span> . </span> {post.timeToRead} min read
+			{post.frontmatter.tags && post.frontmatter.tags.length > 0 ? ` - ` : ``}
+			  <Tags>{post.frontmatter.tags}</Tags>
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
@@ -105,6 +108,7 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+		tags
       }
 	  timeToRead
     }

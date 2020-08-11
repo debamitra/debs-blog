@@ -1,7 +1,7 @@
 ---
 title: Why learn Golang? (As a Java Backend Developer)
 date: "2020-08-10T22:12:03.284Z"
-tags: tech, golang
+tags: ["golang", "non-tech"]
 ---
 
 ![Java To Golang](./java-go.jpg)
