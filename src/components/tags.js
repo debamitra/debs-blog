@@ -1,4 +1,5 @@
 import React from "react"
+import { Link, graphql } from "gatsby"
 
 const Tags = ({ children }) =>
   children && (
@@ -7,17 +8,19 @@ const Tags = ({ children }) =>
         <li
           key={t}
           style={{
-            borderRadius: `4px`,
+            
+            listStyle: "none",
+          }}
+        >
+          
+		  <Link style={{ backgroundImage: "none",borderRadius: `4px`,
             border: `1px solid grey`,
             padding: `2px 6px`,
             marginRight: `5px`,
             fontSize: `80%`,
             backgroundColor: "#007acc",
             color: "white",
-            listStyle: "none",
-          }}
-        >
-          {t}
+            listStyle: "none",}} to={`/tags/${t}/`}>{t}</Link>
         </li>
       ))}
     </ul>
