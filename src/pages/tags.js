@@ -1,7 +1,6 @@
 import React from "react"
 
-import Bio from "../components/bio"
-import SEO from "../components/seo"
+
 import { rhythm } from "../utils/typography"
 
 // Utilities

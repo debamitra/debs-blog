@@ -58,11 +58,17 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer>
+      <footer
+          style={{
+            marginTop: 70,
+          }}
+        >
+          © {new Date().getFullYear()},
+          {` `}
+          <a style={{ fontWeight: 900, boxShadow: 'none' }} href="https://twitter.com/debamitra_">
+            Debamitra Mukherjee
+          </a>
+        </footer>
     </div>
   )
 }
