@@ -1,4 +1,31 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deb's Blog]]></title><description><![CDATA[A personal space on the internet to share learnings and works]]></description><link>https://debamitra.github.io/debs-blog</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 12 Aug 2020 19:12:13 GMT</lastBuildDate><item><title><![CDATA[Why learn Go? (As a Java Backend Developer)]]></title><description><![CDATA[The question isnt why?
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deb's Blog]]></title><description><![CDATA[A personal space on the internet to share learnings and works]]></description><link>https://debamitra.github.io/debs-blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 Aug 2020 06:24:58 GMT</lastBuildDate><item><title><![CDATA[A project-based learning attempt at Go, Part-1]]></title><description><![CDATA[Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this…]]></description><link>https://debamitra.github.io/debs-blog/go-journey-part1/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/go-journey-part1/</guid><pubDate>Tue, 18 Aug 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this introduction is vague enough to be sightly annoying and yet, good enough by my standards, now onwards with the planning of the itenarary.&lt;/p&gt;
+&lt;p&gt;A person on discord says to me, “Tour of Go” is the first step to enlightenment, so of course I went and completed that one first. It was tedious in parts, adapting and learning new syntax but I finally hopped, skipped and jumped my way through it.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://tour.golang.org/welcome/1&quot;&gt;Tour of Go&lt;/a&gt; -
+Gained very basic familiarity with the syntax of Go, played around with Go code examples. Learnt basic concepts and implementations like maps and slices , pointers and interfaces,functions,closures and structs, goroutines and channels.&lt;/li&gt;
+&lt;li&gt;Concurrency (Go) - Went through &lt;a href=&quot;https://www.youtube.com/watch?v=gA4YXUJX7t8&quot;&gt;this&lt;/a&gt; video to learn about concurrency concepts.&lt;/li&gt;
+&lt;li&gt;Developer Envionment Setup - Downloaded and installed go from their &lt;a href=&quot;https://golang.org/&quot;&gt;website&lt;/a&gt;. Set up the IDE (I am using &lt;a href=&quot;https://vscode.rocks/&quot;&gt;VS Code&lt;/a&gt; ). Then installed Go extension for VS Code etc etc.&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Qtk9FFOoT5M&quot;&gt;Structuring Go apps&lt;/a&gt; - This very useful talk covered the following principles and guidelines for structuring a Go app, generally speaking.  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A flat structure is what you can kind of default to in the beginning.&lt;/li&gt;
+&lt;li&gt;Next we can try to break it up into &lt;a href=&quot;https://www.callicoder.com/golang-packages/#:~:text=Go%20Package,following%20syntax%20%2D%20package&quot;&gt;packages&lt;/a&gt;  this is called a layered architecture -&gt; UI, Business logic, dependencies. But this has some problems.How do we share data between packages? Naming is difficult again. Circular dependencies happen, difficult to track.&lt;/li&gt;
+&lt;li&gt;Lets try breaking up into modules &lt;/li&gt;
+&lt;li&gt;Lets try grouping  by context (Domain driven Design) &lt;/li&gt;
+&lt;li&gt;Hexagonal Architecture - Enables you to change a part of the application without changing everything else&lt;/li&gt;
+&lt;li&gt;Ends with proposing that trying to design the project structure using either Domain-Driven-Design or Hexagonal architechture might be a good way to go. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Follow the &lt;strong&gt;Go&lt;/strong&gt; people on Twitter.(Important step)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://quii.gitbook.io/learn-go-with-tests/&quot;&gt;Learn Go with Tests&lt;/a&gt; - Learning through Test Driven development(TDD) is a great way to incorporate good coding practices early on. This is a terrific hands-on resource that I am currently going through. TDD is a good process for writing bug-free,high quality, maintainable, readable, and easy to refactor code in the long run.&lt;/li&gt;
+&lt;li&gt;My next step is to build my first small project which is basically going to be a clone of &lt;a href=&quot;https://news.ycombinator.com&quot;&gt;https://news.ycombinator.com&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And, here’s a quote to make this post look prettier than it actually is&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“Because it’s not perfect, let’s not bother.”
+That’s crazy! Even if we take three steps forward and two and a half back it’s still going
+half a foot forward.”&lt;/p&gt;
+&lt;/blockquote&gt;</content:encoded></item><item><title><![CDATA[Why learn Go? (As a Java Backend Developer)]]></title><description><![CDATA[The question isnt why?
 But why not..  Java is still the  go-to language for large-scale enterprise software development due to its mature…]]></description><link>https://debamitra.github.io/debs-blog/java-to-golang/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/java-to-golang/</guid><pubDate>Mon, 10 Aug 2020 22:12:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
 &lt;p&gt;The question isnt why?
 But why not..&lt;/p&gt;
@@ -36,4 +63,4 @@ But why not..&lt;/p&gt;
 &lt;p&gt;Java is still the  go-to language for large-scale enterprise software development due to its mature ecosystem of libraries and frameworks targetted to the enterprise,strong developer community, durability from having been tried and tested in production environments for over two decades, scalability and ease of integration, its ability to evolve over time and keep adapting to modern best practices and many more reasons.&lt;/p&gt;
 &lt;p&gt;But considering the fast changing landscape of software development, it is necessary for any software engineer to keep adding new tools to their developer toolbox, and learning a new language can sometimes broaden one’s perspective and also improve their abilities when working with Java as well.&lt;/p&gt;
 &lt;p&gt;Go or Golang is a language that can be quite fun and useful to learn in this case. Go was designed originally as more of a systems-level programming language with features of C/C++ but without their problems. It takes the best from them and Java to give you a better language to work with. Go is simple to learn, fast, is slightly more opinionated about best practices for writing clean and efficient code, handles concurrency really really well and Go code is quite easy to reason about unlike Java.  &lt;/p&gt;
-&lt;h2&gt;to be continued…&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[My First Post!]]></title><description><![CDATA[Hello World!]]></description><link>https://debamitra.github.io/debs-blog/my-second-post/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/my-second-post/</guid><pubDate>Thu, 06 Aug 2020 23:46:37 GMT</pubDate><content:encoded>&lt;p&gt;Hello World! &lt;/p&gt;</content:encoded></item></channel></rss>
+&lt;h2&gt;to be continued…&lt;/h2&gt;</content:encoded></item></channel></rss>
