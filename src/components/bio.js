@@ -8,8 +8,13 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+
 
 import { rhythm } from "../utils/typography"
+
+
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -29,6 +34,8 @@ const Bio = () => {
           }
           social {
             twitter
+            linkedin
+			github
           }
         }
       }
@@ -57,12 +64,18 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
-        {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow her on Twitter
-        </a>
+        Written by <strong>{author.name}</strong> {author.summary} 
+        {` `} 
+		<a style={{ fontWeight: 900, boxShadow: 'none' }} href={`https://twitter.com/${social.twitter}`}><FontAwesomeIcon icon={["fab", "twitter"]} 
+style={{color:"#000000"}} 		/></a> 
+            | 
+		<a style={{ fontWeight: 900, boxShadow: 'none' }} href={`https://linkedin.com/in/${social.linkedin}`}><FontAwesomeIcon icon={["fab", "linkedin"]}  style={{color:"#000000"}} /></a>
+			|
+		<a style={{ fontWeight: 900, boxShadow: 'none' }} href={`https://github.com/${social.github}`}><FontAwesomeIcon icon={["fab", "github"]} 
+		 style={{color:"#000000"}} /></a>
+	  
       </p>
+	  
     </div>
   )
 }

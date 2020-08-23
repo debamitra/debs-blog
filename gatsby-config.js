@@ -4,15 +4,18 @@ module.exports = {
     title: `Deb's Blog`,
     author: {
       name: `Debamitra Mukherjee`,
-      summary: `(Hyderabad,India) who likes to build useful things.`,
+      summary: `(Hyderabad,India) who likes to learn and build things.`,
     },
     description: `A personal space on the internet to share learnings and works`,
     siteUrl: `https://debamitra.github.io/debs-blog`,
     social: {
       twitter: `debamitra_`,
+	  linkedin: `debamitramukherjee`,
+	  github: `debamitra`,
     },
   },
   plugins: [
+	`gatsby-plugin-fontawesome-css`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
