@@ -1,4 +1,139 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deb's Blog]]></title><description><![CDATA[A personal space on the internet to share learnings and works]]></description><link>https://debamitra.github.io/debs-blog</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 23 Aug 2020 04:06:09 GMT</lastBuildDate><item><title><![CDATA[A project-based learning attempt at Go, Part-1]]></title><description><![CDATA[Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this…]]></description><link>https://debamitra.github.io/debs-blog/go-journey-part1/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/go-journey-part1/</guid><pubDate>Tue, 18 Aug 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this introduction is vague enough to be sightly annoying and yet, good enough by my standards, now onwards with the planning of the itinerary.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Deb's Blog]]></title><description><![CDATA[A personal space on the internet to share learnings and works]]></description><link>https://debamitra.github.io/debs-blog</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 20 May 2021 19:37:50 GMT</lastBuildDate><item><title><![CDATA[The Story of a Rejected Promise (As a Javascript Programmer)]]></title><description><![CDATA[Stop waiting, start doing!
+-Unknown Javascript is inherently synchronous, i.e. it runs only one line of code at a time and in a sequential…]]></description><link>https://debamitra.github.io/debs-blog/async-javascript/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/async-javascript/</guid><pubDate>Thu, 20 May 2021 19:40:03 GMT</pubDate><content:encoded>&lt;blockquote&gt;
+&lt;p&gt;Stop waiting, start doing!
+-Unknown&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Javascript is inherently synchronous, i.e. it runs only one line of code at a time and in a sequential manner. This means if a task has a long wait-time, e.g waiting for a network call to return a response, it can block the whole program for a while. Also while waiting, no other task can run, which is very inefficient.&lt;/p&gt;
+&lt;p&gt;Asynchronicity is when multiple tasks can be dome simulteneously, for instance, while the the program waits for the response of a network call, it can do some other task like display some graphics or compute some numbers or something else. This is made possible through &lt;strong&gt;asynchronous programming&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;One of the ways to achieve this is via &lt;strong&gt;Callbacks&lt;/strong&gt;. Functions that can take a while is passed an extra argument, a callback function. Once this slow function is called it starts its task and when it finishes, the callback function is called inside it.&lt;/p&gt;
+&lt;h3&gt;Callbacks&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 79.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAQABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHtvKLEA//EABoQAQACAwEAAAAAAAAAAAAAAAECEQAQEiH/2gAIAQEAAQUCZYOonjdR6D//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAXEAEAAwAAAAAAAAAAAAAAAAAAICEx/9oACAEBAAY/AoYp/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAIRBBMVGB/9oACAEBAAE/IUcQhOAotalgeFEISu3P/9oADAMBAAIAAwAAABDDz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAAICAgMAAAAAAAAAAAAAAAERACEQMUFRcf/aAAgBAQABPxBzQjucaXmGsiAwoLgtgAI2JywQUqzn/9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Callback&quot;
+        title=&quot;Callback&quot;
+        src=&quot;/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg&quot;
+        srcset=&quot;/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/a80bd/callback1.jpg 148w,
+/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c91a/callback1.jpg 295w,
+/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg 590w,
+/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/a8a14/callback1.jpg 885w,
+/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/fbd2c/callback1.jpg 1180w,
+/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg 1730w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;javascript&quot;  terminal=&quot;carbon&quot; theme=&quot;blackboard&quot; &gt;
+          &lt;code slot=&quot;code&quot;&gt;function doHomework( questions, chocolate, eatChocolate ) {
+ //do homework stuff
+ .
+ .
+ eatChocolate(chocolate); 
+}
+doHomework(questions, chocolate, eatChocolate);&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;h3&gt;Problem with Callbacks? - Callback Hell&lt;/h3&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 68.24324324324324%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdmmygD/xAAYEAEBAQEBAAAAAAAAAAAAAAABABECEP/aAAgBAQABBQLVtwhnkfP/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAWEAADAAAAAAAAAAAAAAAAAAAAICH/2gAIAQEABj8CKv8A/8QAGxAAAgIDAQAAAAAAAAAAAAAAABEBIRAxQXH/2gAIAQEAAT8h2FTN7yRZwiBA+Y//2gAMAwEAAgADAAAAELDP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAGhABAQADAQEAAAAAAAAAAAAAAREAITFRcf/aAAgBAQABPxBHK2BPBm8NoAUFerzFFifcG6JfcZRtU3xwITP/2Q==&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Too many nested Callbacks&quot;
+        title=&quot;Too many nested Callbacks&quot;
+        src=&quot;/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg&quot;
+        srcset=&quot;/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/a80bd/callback2.jpg 148w,
+/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c91a/callback2.jpg 295w,
+/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg 590w,
+/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/a8a14/callback2.jpg 885w,
+/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/fbd2c/callback2.jpg 1180w,
+/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg 2145w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;javascript&quot;  terminal=&quot;carbon&quot; theme=&quot;blackboard&quot; &gt;
+          &lt;code slot=&quot;code&quot;&gt;doHomework(questions, function(){
+	eatChocolate(chocolate, function(){
+		washHands(soap, function(){
+			play();
+		});
+	});
+});&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;Above example has only three nested functions but it can go on and on causing difficult to read code.&lt;/p&gt;
+&lt;p&gt;To resolve this problem we have &lt;strong&gt;Promises&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Promise&lt;/h3&gt;
+&lt;p&gt;A promise is a simple javascript object with mutable state i.e the value it holds changes. When a promise is first created, its state is &lt;code class=&quot;language-text&quot;&gt;pending&lt;/code&gt; and the value it holds is &lt;em&gt;undefined&lt;/em&gt; . Later when the promise resolves to a value or gets rejected and returns, the handler passed to &lt;code class=&quot;language-text&quot;&gt;.then()&lt;/code&gt; gets executed.   &lt;/p&gt;
+&lt;p&gt;&lt;span
+      class=&quot;gatsby-resp-image-wrapper&quot;
+      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
+    &gt;
+      &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+    &lt;span
+    class=&quot;gatsby-resp-image-background-image&quot;
+    style=&quot;padding-bottom: 142.56756756756758%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAdABQDASIAAhEBAxEB/8QAGAABAQADAAAAAAAAAAAAAAAAAgABAwX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAHtnYRRiOYUY//EABsQAAMAAgMAAAAAAAAAAAAAAAABESFBEBIx/9oACAEBAAEFAt2l5gy4Xm1k6o//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAUEAEAAAAAAAAAAAAAAAAAAAAw/9oACAEBAAY/Ak//xAAbEAADAQADAQAAAAAAAAAAAAAAAREhMUFRcf/aAAgBAQABPyF3NFS3CRxO9kbbPs5ejZcoN2dHb0StH5H/2gAMAwEAAgADAAAAEIDIDP/EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8QH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8QH//EAB0QAQACAgMBAQAAAAAAAAAAAAEAESExQVFxYfH/2gAIAQEAAT8Qzgwq8Gpe2YCcL3iDnMSGuwXdRHOLx8lz9R4F9tahwMunUMGV3NAi1mA9d8wro+k//9k=&apos;); background-size: cover; display: block;&quot;
+  &gt;&lt;/span&gt;
+  &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        alt=&quot;Promises, promises&quot;
+        title=&quot;Promises, promises&quot;
+        src=&quot;/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg&quot;
+        srcset=&quot;/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/a80bd/promise2.jpg 148w,
+/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c91a/promise2.jpg 295w,
+/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg 590w,
+/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg 633w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
+        loading=&quot;lazy&quot;
+      /&gt;
+  &lt;/a&gt;
+    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;On executing, when the interpreter reached this line &lt;code class=&quot;language-text&quot;&gt;checkForExtraPen().then&lt;/code&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;it puts the  HANDLER we passed into .then() , in the MICROTASK QUEUE.&lt;/li&gt;
+&lt;li&gt;it executes the EXECUTOR FUNCTION [that we passed to new Promise()].&lt;/li&gt;
+&lt;li&gt;executor function calls reject() and populates promise object with information passed to the reject call ie. “Oops Sorry!”&lt;/li&gt;
+&lt;li&gt;interpreter goes to next like and prints “other work..”&lt;/li&gt;
+&lt;li&gt;it then takes out the handler from microtask queue and executes it&lt;/li&gt;
+&lt;li&gt;the &lt;code class=&quot;language-text&quot;&gt;value&lt;/code&gt; passed to the handler is information returned from resolve(). In our case it is &lt;em&gt;undefined&lt;/em&gt;. We get &lt;code class=&quot;language-text&quot;&gt;error&lt;/code&gt; because our promise was rejected, which is printed out “Oops Sorry!”&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And this concludes our Promise story.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[A project-based learning attempt at Go, Part-1]]></title><description><![CDATA[Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this…]]></description><link>https://debamitra.github.io/debs-blog/go-journey-part1/</link><guid isPermaLink="false">https://debamitra.github.io/debs-blog/go-journey-part1/</guid><pubDate>Tue, 18 Aug 2020 22:40:32 GMT</pubDate><content:encoded>&lt;p&gt;Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this introduction is vague enough to be sightly annoying and yet, good enough by my standards, now onwards with the planning of the itinerary.&lt;/p&gt;
 &lt;p&gt;A person on discord says to me, “Tour of Go” is the first step to enlightenment, so of course I went and completed that one first. It was tedious in parts, adapting and learning new syntax but I finally hopped, skipped and jumped my way through it.&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;a href=&quot;https://tour.golang.org/welcome/1&quot;&gt;Tour of Go&lt;/a&gt; -
