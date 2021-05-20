@@ -2,7 +2,7 @@
 title: A project-based learning attempt at Go, Part-1
 date: "2020-08-18T22:40:32.169Z"
 description: Learning a new pogramming language(Go) for fun and non-profit..
-tags: ["ramblings","go","golang","learn-in-public"]
+tags: ["ramblings","go","golang"]
 ---
 
 Go is an open-source general-purpose programming language created by some Google folks sometime in the late 2000s. Okay, I think this introduction is vague enough to be sightly annoying and yet, good enough by my standards, now onwards with the planning of the itinerary.

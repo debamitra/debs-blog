@@ -8,6 +8,9 @@ import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 import Tags from "../components/tags"
 
+import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoHighlightElement();
+
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
