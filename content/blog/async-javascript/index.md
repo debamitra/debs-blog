@@ -1,12 +1,15 @@
 ---
 title: The Story of a Rejected Promise (As a Javascript Programmer)
 date: "2021-05-20T19:40:03.284Z"
+description: Promises, promises everywhere, not even one resolved!
 tags: ["javascript", "promises", "tech"]
 ---
 
 
 >Stop waiting, start doing!
+
 >-Unknown
+
 
 Javascript is inherently synchronous, i.e. it runs only one line of code at a time and in a sequential manner. This means if a task has a long wait-time, e.g waiting for a network call to return a response, it can block the whole program for a while. Also while waiting, no other task can run, which is very inefficient.
 
