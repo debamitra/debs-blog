@@ -74,7 +74,7 @@ And this concludes our Promise story.
 ----
 
 
-I am currently looking for work in the Javascript domain, if you know of any remote openings in an innovative company with a healthy employee culture , please do share, I can be reached at <debamitra.mukherjee@gmail.com> , or connect with me on [twitter]( https://twitter.com/debamitra_) / [linkedin](https://www.linkedin.com/in/debamitramukherjee/) 
+I am currently looking for work in the Javascript domain, if you know of any remote openings in an innovative company with a healthy employee culture , please do share, I can be reached at <debamitra.mukherjee@gmail.com> , or connect with me on [twitter]( https://twitter.com/debamitra_) 
 
 Thanks for reading, hope you enjoyed it. 
 
