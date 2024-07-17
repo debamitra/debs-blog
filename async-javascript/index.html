@@ -456,16 +456,16 @@
 <p>-Unknown</p>
 </blockquote>
 <p>Javascript is inherently synchronous, i.e. it runs only one line of code at a time and in a sequential manner. This means if a task has a long wait-time, e.g making a network call and then waiting for the call to return a response, it can block the whole program for a while. Also while waiting, no other task can run, which is very inefficient.</p>
-<p>Asynchronicity is when multiple tasks can be dome simulteneously, for instance, while the the program waits for the response of a network call, it can do some other task like display some graphics or compute some numbers or something else. This is made possible through <strong>asynchronous programming</strong>.</p>
+<p>Asynchronicity is when multiple tasks can be done simulteneously, for instance, while the the program waits for the response of a network call, it can do some other task like display some graphics or compute some numbers or something else. This is made possible through <strong>asynchronous programming</strong>.</p>
 <p>One of the ways to achieve this is via <strong>Callbacks</strong>. A function with a slow task, is passed an extra argument, a callback function. Once this slow function is called it starts its task and when it finishes, the callback function is called inside it.</p>
-<p>###Callbacks
-<span
+<h3>Callbacks</h3>
+<p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
     >
       <a
     class="gatsby-resp-image-link"
-    href="/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg"
+    href="/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -478,13 +478,13 @@
         class="gatsby-resp-image-image"
         alt="Callback"
         title=""
-        src="/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg"
-        srcset="/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/a80bd/callback1.jpg 148w,
-/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c91a/callback1.jpg 295w,
-/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg 590w,
-/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/a8a14/callback1.jpg 885w,
-/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/fbd2c/callback1.jpg 1180w,
-/debs-blog/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg 1730w"
+        src="/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg"
+        srcset="/static/254d01ddffe14a50b1591b1d5cb1081c/a80bd/callback1.jpg 148w,
+/static/254d01ddffe14a50b1591b1d5cb1081c/1c91a/callback1.jpg 295w,
+/static/254d01ddffe14a50b1591b1d5cb1081c/1c72d/callback1.jpg 590w,
+/static/254d01ddffe14a50b1591b1d5cb1081c/a8a14/callback1.jpg 885w,
+/static/254d01ddffe14a50b1591b1d5cb1081c/fbd2c/callback1.jpg 1180w,
+/static/254d01ddffe14a50b1591b1d5cb1081c/5afe2/callback1.jpg 1730w"
         sizes="(max-width: 590px) 100vw, 590px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -501,14 +501,14 @@
 }
 doHomework(questions, chocolate, eatChocolate);</code>
         </deckgo-highlight-code>
-<p>###Problem with Callbacks? - Callback Hell</p>
+<h3>Problem with Callbacks? - Callback Hell</h3>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
     >
       <a
     class="gatsby-resp-image-link"
-    href="/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg"
+    href="/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -521,13 +521,13 @@ doHomework(questions, chocolate, eatChocolate);</code>
         class="gatsby-resp-image-image"
         alt="Too many nested Callbacks"
         title=""
-        src="/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg"
-        srcset="/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/a80bd/callback2.jpg 148w,
-/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c91a/callback2.jpg 295w,
-/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg 590w,
-/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/a8a14/callback2.jpg 885w,
-/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/fbd2c/callback2.jpg 1180w,
-/debs-blog/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg 2145w"
+        src="/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg"
+        srcset="/static/3220cd90c5f9a497f3b46c5d3947924e/a80bd/callback2.jpg 148w,
+/static/3220cd90c5f9a497f3b46c5d3947924e/1c91a/callback2.jpg 295w,
+/static/3220cd90c5f9a497f3b46c5d3947924e/1c72d/callback2.jpg 590w,
+/static/3220cd90c5f9a497f3b46c5d3947924e/a8a14/callback2.jpg 885w,
+/static/3220cd90c5f9a497f3b46c5d3947924e/fbd2c/callback2.jpg 1180w,
+/static/3220cd90c5f9a497f3b46c5d3947924e/44fe8/callback2.jpg 2145w"
         sizes="(max-width: 590px) 100vw, 590px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -546,7 +546,7 @@ doHomework(questions, chocolate, eatChocolate);</code>
         </deckgo-highlight-code>
 <p>Above example has only three nested functions but the indented nesting can go on and on resulting in difficult to read code.</p>
 <p>To resolve this problem we have <strong>Promises</strong>.</p>
-<p>###Promise</p>
+<h3>Promise</h3>
 <p>A promise is a simple javascript object with mutable state i.e the value it holds changes. When a promise is first created, its state is <code class="language-text">pending</code> and the value it holds is <em>undefined</em> . Later when the promise resolves to a value or gets rejected and returns, the handler passed to <code class="language-text">.then()</code> gets executed with this resolved value or rejected error as the case may be.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -554,7 +554,7 @@ doHomework(questions, chocolate, eatChocolate);</code>
     >
       <a
     class="gatsby-resp-image-link"
-    href="/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg"
+    href="/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg"
     style="display: block"
     target="_blank"
     rel="noopener"
@@ -567,11 +567,11 @@ doHomework(questions, chocolate, eatChocolate);</code>
         class="gatsby-resp-image-image"
         alt="Promises, promises"
         title=""
-        src="/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg"
-        srcset="/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/a80bd/promise2.jpg 148w,
-/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c91a/promise2.jpg 295w,
-/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg 590w,
-/debs-blog/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg 633w"
+        src="/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg"
+        srcset="/static/a8a34f1dd613fa7496f427ec2a402d7b/a80bd/promise2.jpg 148w,
+/static/a8a34f1dd613fa7496f427ec2a402d7b/1c91a/promise2.jpg 295w,
+/static/a8a34f1dd613fa7496f427ec2a402d7b/1c72d/promise2.jpg 590w,
+/static/a8a34f1dd613fa7496f427ec2a402d7b/054c0/promise2.jpg 633w"
         sizes="(max-width: 590px) 100vw, 590px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
@@ -602,15 +602,15 @@ doHomework(questions, chocolate, eatChocolate);</code>
 </ul>
 <p>And this concludes our Promise story.</p>
 <hr>
-<p>I am currently looking for work in the Javascript domain, if you know of any remote openings in an innovative company with a healthy employee culture , please do share, I can be reached at <a href="mailto:debamitra.mukherjee@gmail.com">debamitra.mukherjee@gmail.com</a> , or connect with me on <a href="https://twitter.com/debamitra_">twitter</a></p>
-<p>Thanks for reading, hope you enjoyed it.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFhElEQVR42i2SeVDUZRjHf6al/dWlZsc4lpYmK4iOBuMFCIYHIaKTV5IokqEoiUfCmNZwuJyCXLuwy5XuAiHgCgsKyJ4QIuwuiRcegKhpDkYO18qn3zj98Znned75zvd5532/wprUYlaeKmZFoppVyapX1Svhf+LVrBZn95h8/E+pWZuk4svjctyjc/GMLcAzJg8PsXePUuIRpRDPFQg7ZQWEKvJILsqmoCyL08VywhUKfs7PZo9Mibc0l82Z54itvkqG/gbR1W3sytXifVLBaqkSH2kOq2Kz8Y7J5qsYOUKdoYQ6Yzl1Jg3VBo3YV1Cn/53LOhXai0rOm/VYHvRz8+Fzev7+l6f9g1wwXePE2Sp8ExWsiVeyNiEHv3g5a+NlCJea66ls1FFlbhCF9Zw31qMxNVCur0XX1szL0VGGR+wM218yZB/lcd8AZstNTirKkZcokeYlE3RaxsYkGesTRcPe9mLM7U2Y2hsx2szoWnVUm2vRGKoxWloI+WEv85ydReZyYF8oPb0PuWy+gktEBcGni1Cq4zgkzyAwNYtIeSrCwLV8uu+b6Lp1kZ7Oejq7LbRcM1FpqOKCoZ7FfhsYO2YMk2fMZLrrYsLDwtBdsTI9pIIPNmZxJFfJrwW5pKqyqdGKbzhslDJ4JZVhm5yhdhnd3Y1c72rD2HoRQ8tlXIP2I0ycyutTZzN+kTey3EJqTK1ItiQQIpXRYCymwVSBobECo4gwbEpm0JzCQFMag40p9FkKeHi7hvtdjdzrbaOmwUB0eiEpirMY/2jj7pN+Kk0Wai6W0m7K4apZjUWnxKpNwFJ2HGHEKmfEmsOwJYchm4LBPwvEBQk8a87iUUcZj1ry0DVUiab5hEZE4/b1Vrbt+A5zTTZ3TEoe1cfSWRH5ijsa0dD+QMvIHRWjD4p4Uialq/ICz5/ehh4tz28UUWEwore1E7D3CG4+3+C2ej2+m4P58gcZ03fmky7P5F99LE9qo/lbRBgdvIe9z8LoQBP951PoePdDbH6bKIyI5ExQICUBu9Bs3UrJokV0FOQzBPycIMdP1srKrE4+Wp9OrzGTF/oY+nRxCC9bFdithdg7y/jnpoEOLx/uvTWJLePeIFB4jbTXxhEtjCFx4vtcijjGs5ew90gUuw+foO3uX2QUnqOvKYOB5jReNIqxsRvjGWmIAms2tj8byZZmYJPMJ/mdKWx4820y33mPlBmzOJOUTvNVK9fvP+RstRnvDdt5d/o81EW58FTPi85KBm+Xi4Y1EYyIP0xTAr06GbLSas46u6B+ezIeYycQN2YcactWkKM4w4Mnz8gpVCFNU/LcDp5+24nf4wPNcbz4PYQhdaAYG/GqIy3JPL5vxfaHlke2Um4d20nVpMns/MIJuctcosZPIHHDNjLj5GzZd5xvQ34iq1RH7LGDPJX7M3xmC4OFW8W6TYzNlSSGSpbSU/Itl2K86NaEcbd8LzfTfWnLi6Q4eAG/RR6mSqGiVnsZRckFPnV0RXh9CuGbl0FtKPbyYEZLg7AX70Do0xxiQL2UEZUTurDPKQn6DN0xJ7qUi7GmLKFg7RQM57K41Wen7UYXrdd7UGn0eAYc5eiujVjj/GiN86crYxP9+QEIdxPX0RHngfEXJwJdprL0kw/wmjmFMLeP0f44m6odnyI9tIcfTxay//hpQo4msfvgSTZtP8gCB2ccJ0/EfcZU4v0XUBfuhdCT5Is5YgWhbnPY7upA8GIJQYskBLg4sN99FidWzcJ/4Rx85knwc57JOsdP2Og0jW3zp/HdwhmidjbfL5lNmIeEGN/5CDUHlqPe7UbKZlcS1i/klzXzCF/uSJj7HEKWSQheIiF0mWju5sA+dwfCPR057DWXQyIHlju90u1zkxCy1EGcHfkPtPFArWwUvaYAAAAASUVORK5CYII=" alt="Debamitra Mukherjee" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png 1x,
-/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/f937a/profile.png 1.5x,
-/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/71eb7/profile.png 2x" /><img loading="lazy" width="50" height="50" srcset="/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png 1x,
-/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/f937a/profile.png 1.5x,
-/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/71eb7/profile.png 2x" src="/debs-blog/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png" alt="Debamitra Mukherjee" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Debamitra Mukherjee</strong> <!-- -->(Hyderabad,India) who likes to learn and build things.<!-- --> <a style="font-weight:900;box-shadow:none" href="https://twitter.com/debamitra_"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#000000"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>|<a style="font-weight:900;box-shadow:none" href="https://github.com/debamitra"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#000000"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p></div></footer></article><div id="disqus_thread"></div><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/debs-blog/go-journey-part1/">← <!-- -->A project-based learning attempt at Go, Part-1</a></li><li><a rel="next" href="/debs-blog/2023-year-in-review/">My Year of 2023 - 2 steps forward, one step back<!-- --> →</a></li></ul></nav></main><footer style="margin-top:70px">© <!-- -->2024<!-- -->,<!-- --> <a style="font-weight:900;box-shadow:none" href="https://twitter.com/debamitra_">Debamitra Mukherjee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/async-javascript/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
+<p>I can be reached at <a href="mailto:debamitra.mukherjee@gmail.com">debamitra.mukherjee@gmail.com</a> , or connect with me on <a href="https://twitter.com/debamitra_">twitter</a></p>
+<p>Thanks for reading, hope you enjoyed it.</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAFhElEQVR42i2SeVDUZRjHf6al/dWlZsc4lpYmK4iOBuMFCIYHIaKTV5IokqEoiUfCmNZwuJyCXLuwy5XuAiHgCgsKyJ4QIuwuiRcegKhpDkYO18qn3zj98Znned75zvd5532/wprUYlaeKmZFoppVyapX1Svhf+LVrBZn95h8/E+pWZuk4svjctyjc/GMLcAzJg8PsXePUuIRpRDPFQg7ZQWEKvJILsqmoCyL08VywhUKfs7PZo9Mibc0l82Z54itvkqG/gbR1W3sytXifVLBaqkSH2kOq2Kz8Y7J5qsYOUKdoYQ6Yzl1Jg3VBo3YV1Cn/53LOhXai0rOm/VYHvRz8+Fzev7+l6f9g1wwXePE2Sp8ExWsiVeyNiEHv3g5a+NlCJea66ls1FFlbhCF9Zw31qMxNVCur0XX1szL0VGGR+wM218yZB/lcd8AZstNTirKkZcokeYlE3RaxsYkGesTRcPe9mLM7U2Y2hsx2szoWnVUm2vRGKoxWloI+WEv85ydReZyYF8oPb0PuWy+gktEBcGni1Cq4zgkzyAwNYtIeSrCwLV8uu+b6Lp1kZ7Oejq7LbRcM1FpqOKCoZ7FfhsYO2YMk2fMZLrrYsLDwtBdsTI9pIIPNmZxJFfJrwW5pKqyqdGKbzhslDJ4JZVhm5yhdhnd3Y1c72rD2HoRQ8tlXIP2I0ycyutTZzN+kTey3EJqTK1ItiQQIpXRYCymwVSBobECo4gwbEpm0JzCQFMag40p9FkKeHi7hvtdjdzrbaOmwUB0eiEpirMY/2jj7pN+Kk0Wai6W0m7K4apZjUWnxKpNwFJ2HGHEKmfEmsOwJYchm4LBPwvEBQk8a87iUUcZj1ry0DVUiab5hEZE4/b1Vrbt+A5zTTZ3TEoe1cfSWRH5ijsa0dD+QMvIHRWjD4p4Uialq/ICz5/ehh4tz28UUWEwore1E7D3CG4+3+C2ej2+m4P58gcZ03fmky7P5F99LE9qo/lbRBgdvIe9z8LoQBP951PoePdDbH6bKIyI5ExQICUBu9Bs3UrJokV0FOQzBPycIMdP1srKrE4+Wp9OrzGTF/oY+nRxCC9bFdithdg7y/jnpoEOLx/uvTWJLePeIFB4jbTXxhEtjCFx4vtcijjGs5ew90gUuw+foO3uX2QUnqOvKYOB5jReNIqxsRvjGWmIAms2tj8byZZmYJPMJ/mdKWx4820y33mPlBmzOJOUTvNVK9fvP+RstRnvDdt5d/o81EW58FTPi85KBm+Xi4Y1EYyIP0xTAr06GbLSas46u6B+ezIeYycQN2YcactWkKM4w4Mnz8gpVCFNU/LcDp5+24nf4wPNcbz4PYQhdaAYG/GqIy3JPL5vxfaHlke2Um4d20nVpMns/MIJuctcosZPIHHDNjLj5GzZd5xvQ34iq1RH7LGDPJX7M3xmC4OFW8W6TYzNlSSGSpbSU/Itl2K86NaEcbd8LzfTfWnLi6Q4eAG/RR6mSqGiVnsZRckFPnV0RXh9CuGbl0FtKPbyYEZLg7AX70Do0xxiQL2UEZUTurDPKQn6DN0xJ7qUi7GmLKFg7RQM57K41Wen7UYXrdd7UGn0eAYc5eiujVjj/GiN86crYxP9+QEIdxPX0RHngfEXJwJdprL0kw/wmjmFMLeP0f44m6odnyI9tIcfTxay//hpQo4msfvgSTZtP8gCB2ccJ0/EfcZU4v0XUBfuhdCT5Is5YgWhbnPY7upA8GIJQYskBLg4sN99FidWzcJ/4Rx85knwc57JOsdP2Og0jW3zp/HdwhmidjbfL5lNmIeEGN/5CDUHlqPe7UbKZlcS1i/klzXzCF/uSJj7HEKWSQheIiF0mWju5sA+dwfCPR057DWXQyIHlju90u1zkxCy1EGcHfkPtPFArWwUvaYAAAAASUVORK5CYII=" alt="Debamitra Mukherjee" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png 1x,
+/static/3e36f22872bc1e55d49af83968cbd694/f937a/profile.png 1.5x,
+/static/3e36f22872bc1e55d49af83968cbd694/71eb7/profile.png 2x" /><img loading="lazy" width="50" height="50" srcset="/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png 1x,
+/static/3e36f22872bc1e55d49af83968cbd694/f937a/profile.png 1.5x,
+/static/3e36f22872bc1e55d49af83968cbd694/71eb7/profile.png 2x" src="/static/3e36f22872bc1e55d49af83968cbd694/8ba1e/profile.png" alt="Debamitra Mukherjee" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Debamitra Mukherjee</strong> <!-- -->(Hyderabad,India) who likes to learn and build things.<!-- --> <a style="font-weight:900;box-shadow:none" href="https://twitter.com/debamitra_"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="color:#000000"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg></a>|<a style="font-weight:900;box-shadow:none" href="https://github.com/debamitra"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" style="color:#000000"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a></p></div></footer></article><div id="disqus_thread"></div><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li></li><li></li></ul></nav></main><footer style="margin-top:70px">© <!-- -->2024<!-- -->,<!-- --> <a style="font-weight:900;box-shadow:none" href="https://twitter.com/debamitra_">Debamitra Mukherjee</a></footer></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/async-javascript/";/*]]>*/</script><!-- slice-start id="_gatsby-scripts-1" -->
           <script
             id="gatsby-chunk-mapping"
           >
             window.___chunkMapping="{\"app\":[\"/app-0dde59dc9d967c9eebd0.js\"],\"component---cache-caches-gatsby-plugin-offline-app-shell-js\":[\"/component---cache-caches-gatsby-plugin-offline-app-shell-js-0056a07d156969b8c238.js\"],\"component---src-pages-404-js\":[\"/component---src-pages-404-js-ad8c1767e087a3adce5c.js\"],\"component---src-pages-index-js\":[\"/component---src-pages-index-js-eaf108fae41fec36f634.js\"],\"component---src-pages-tags-js\":[\"/component---src-pages-tags-js-d6cc967f857cfc9bad27.js\"],\"component---src-pages-using-typescript-tsx\":[\"/component---src-pages-using-typescript-tsx-7b5c7b9052afabb1eb6e.js\"],\"component---src-templates-blog-post-js\":[\"/component---src-templates-blog-post-js-945c5d2fa0b1aa2a5494.js\"],\"component---src-templates-tags-js\":[\"/component---src-templates-tags-js-3513097b9f8c91d268d3.js\"]}";
           </script>
-        <script>window.___webpackCompilationHash="267e1edfa43cf81a5516";</script><script src="/debs-blog/webpack-runtime-4627c2f66e738b4d9b4b.js" async></script><script src="/debs-blog/framework-195f9a31e5a4e6cebf51.js" async></script><script src="/debs-blog/app-0dde59dc9d967c9eebd0.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
+        <script>window.___webpackCompilationHash="3b914a0c2d2ebbd4b9f4";</script><script src="/debs-blog/webpack-runtime-4627c2f66e738b4d9b4b.js" async></script><script src="/debs-blog/framework-195f9a31e5a4e6cebf51.js" async></script><script src="/debs-blog/app-0dde59dc9d967c9eebd0.js" async></script><!-- slice-end id="_gatsby-scripts-1" --></body></html>
