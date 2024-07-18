@@ -13,11 +13,11 @@ tags: ["javascript", "promises", "tech"]
 
 Javascript is inherently synchronous, i.e. it runs only one line of code at a time and in a sequential manner. This means if a task has a long wait-time, e.g making a network call and then waiting for the call to return a response, it can block the whole program for a while. Also while waiting, no other task can run, which is very inefficient.
 
-Asynchronicity is when multiple tasks can be dome simulteneously, for instance, while the the program waits for the response of a network call, it can do some other task like display some graphics or compute some numbers or something else. This is made possible through **asynchronous programming**.
+Asynchronicity is when multiple tasks can be done simulteneously, for instance, while the the program waits for the response of a network call, it can do some other task like display some graphics or compute some numbers or something else. This is made possible through **asynchronous programming**.
 
 One of the ways to achieve this is via **Callbacks**. A function with a slow task, is passed an extra argument, a callback function. Once this slow function is called it starts its task and when it finishes, the callback function is called inside it.
 
-###Callbacks
+### Callbacks
 ![Callback](./callback1.jpg)
 
 
@@ -32,7 +32,7 @@ function doHomework( questions, chocolate, eatChocolate ) {
 doHomework(questions, chocolate, eatChocolate);
 ```
 
-###Problem with Callbacks? - Callback Hell 
+### Problem with Callbacks? - Callback Hell 
 
 ![Too many nested Callbacks](./callback2.jpg)
 
@@ -49,7 +49,7 @@ Above example has only three nested functions but the indented nesting can go on
 
 To resolve this problem we have **Promises**.
 
-###Promise
+### Promise
 
 A promise is a simple javascript object with mutable state i.e the value it holds changes. When a promise is first created, its state is `pending` and the value it holds is _undefined_ . Later when the promise resolves to a value or gets rejected and returns, the handler passed to `.then()` gets executed with this resolved value or rejected error as the case may be.   
 
@@ -74,7 +74,7 @@ And this concludes our Promise story.
 ----
 
 
-I am currently looking for work in the Javascript domain, if you know of any remote openings in an innovative company with a healthy employee culture , please do share, I can be reached at <debamitra.mukherjee@gmail.com> , or connect with me on [twitter]( https://twitter.com/debamitra_) 
+I can be reached at <debamitra.mukherjee@gmail.com> , or connect with me on [twitter]( https://twitter.com/debamitra_) 
 
 Thanks for reading, hope you enjoyed it. 
 

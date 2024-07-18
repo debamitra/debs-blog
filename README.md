@@ -9,7 +9,7 @@
 
 Use docker run with volume mapping to sync your local Gatsby project files with the container. Replace /path/to/your/gatsby-project with the path to your Gatsby project on your host machine.
 
-`docker run -v /path/to/your/gatsby-project:/app -p 8000:8000 --name gatsby-container gatsby-dev`
+`docker run -v /Users/debamitramukherjee/Repositories/HOME/repo-personal/debs-blog:/app -p 8000:8000 --name gatsby-container gatsby-dev`
 
 
 ### <u> Start Gatsby Development Server Inside the Container: </u> 
@@ -23,3 +23,10 @@ The -H 0.0.0.0 option makes Gatsby accessible from your host machine.
 ### <u>  Access the Site: </u>
 
 Your Gatsby site should now be accessible at http://localhost:8000.
+
+
+#### STEPS TO UPDATE AND PUBLISH BLOG DIRECTLY
+
+Inside the container run :
+
+`npm run deploy`
