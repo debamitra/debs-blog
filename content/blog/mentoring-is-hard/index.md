@@ -5,8 +5,6 @@ description: reflections on my journey into mentoring!
 tags: ["mentor", "tech"]
 ---
 
-## Mentoring is Hard
-
 When I joined my current role three and a half years ago, I was coming out of a "sabbatical" which was just me stepping back for a bit. During those months, I spent some time re-evaluating my career, reflecting on past mistakes and many missed opportunities. I had left my last job because it felt meaningless, and I wasn’t doing it justice. So, when I got this offer, I grabbed it eagerly, ready to get back to work and earn a monthly paycheck again. Watching my bank balance deplete (rather swiftly) over the past few months was very heartbreaking and I missed the dopamine hit from those month-end "your account has been credited.." messages. And the rent and bills weren’t going to pay themselves, were they?
 
 But let’s get back to talking about mentoring.
@@ -18,9 +16,7 @@ I joined in a senior developer role, and my first project was to build a web por
 I was paired with a new backend developer who was a fresher, which quickly turned into me unofficially guiding him. He was entirely new to the field, so I guided him on the basics of web development, setting up APIs, and structuring a database, while he worked to skill up on the tech stack independently. I handled most of the initial architecture, the DB schema, and feature development, then handed him manageable tasks to start with.
 
 
-<div align="center">
-    <img src="https://github.com/user-attachments/assets/1968ad9e-c453-492d-ba05-bf410994bfe4" alt="mentoring" width="500">
-</div>
+![Turtle master](./turtles1.jpeg)
 
 ### Watching Someone Grow
 
