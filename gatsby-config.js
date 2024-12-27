@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: `/debs-blog`,
+  pathPrefix: ``,
   siteMetadata: {
     title: `Deb's Blog`,
     author: {
@@ -7,7 +7,7 @@ module.exports = {
       summary: `(Hyderabad,India) who likes to learn and build things.`,
     },
     description: `A personal space on the internet to share learnings and works`,
-    siteUrl: `https://debamitra.github.io/debs-blog`,
+    siteUrl: `https://debamitra.dev`,
     social: {
       twitter: `debamitra_`,
 	  linkedin: `debamitramukherjee`,
@@ -83,6 +83,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }

@@ -17,7 +17,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext
   
   const disqusConfig = {
-      url: `https://debamitra.github.io/debs-blog{location.pathname}`,
+      url: `https://debamitra.dev{location.pathname}`,
       identifier: `${location.pathname}`,
       title: post.frontmatter.title,
     }
