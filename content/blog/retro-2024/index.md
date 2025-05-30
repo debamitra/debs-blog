@@ -1,7 +1,7 @@
 ---
 title: 2024 - A Short Retrospective
 date: "2024-12-23T19:40:03.284Z"
-description: reflections on how the year of 2024 went!
+description: how did the year of 2024 go?
 tags: ["2024", "tech"]
 ---
 

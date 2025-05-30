@@ -1,7 +1,7 @@
 ---
 title: Mentoring is hard
 date: "2024-11-07T19:40:03.284Z"
-description: reflections on my journey into mentoring!
+description: what does it mean for me to be a good mentor!
 tags: ["mentor", "tech"]
 ---
 
